@@ -67,7 +67,7 @@ apt install -y mysql-server
 
 #Installing Tomcat 9
 echo "Installing Tomcat 9"
-group add tomcat
+groupadd tomcat
 useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 cd /tmp
 $(wget -c ${TOMCAT_DOWNLOAD_PATH}) 
