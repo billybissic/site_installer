@@ -72,7 +72,7 @@ useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 cd /tmp
 $(wget -c ${TOMCAT_DOWNLOAD_PATH}) 
 mkdir /opt/tomcat
-tar xyvf apache-tomcat-9*tar.gz -C /opt/tomcat --strip-components=1
+tar xzvf apache-tomcat-9*tar.gz -C /opt/tomcat --strip-components=1
 cd -
 cd /opt/tomcat
 chgrp -R tomcat /opt/tomcat
